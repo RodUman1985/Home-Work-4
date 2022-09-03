@@ -49,7 +49,7 @@ public class Main {
         list.print();
 
         list.remoove(3);
-        System.out.println("искомый индекс"+list.get(5));
+        System.out.println("искомый элемеент  "+list.get(1));
 
     }
 }

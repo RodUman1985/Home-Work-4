@@ -52,20 +52,20 @@ public class LinkedList {
 
     }
 
-    public int get(int index) {
+    public int get(int ind) {
         if (this.head == null) {
             System.out.println("Список пуст");
                     }
         Node last = this.head;
-        int z=0;
-        for (int i = 1; last != null; i++) {
-            if (index == i) {
-                z= last.value;
-            }
+        Node isc= this.head;
+     for (int i=2;last!=null;i++){
+         last = last.next;
+         if(ind==i){
+             isc=last;
+         }
+     }
 
-            }
-
-        return z;
+        return isc.value;
     }
 
 }
