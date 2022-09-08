@@ -1,6 +1,6 @@
 package com.company;
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws EmptyListExeption, UnCoorrectIndexExeption, ExceededSizeOfListExeption {
 /*Ќаписать реализацию односв€зного списка.
 ќсновное назначение св€зного списка Ч предоставление
 механизма дл€ хранени€ и доступа к произвольному количеству
@@ -23,6 +23,9 @@ public class Main {
 ѕри условии, что будет выполн€тьс€ недопустима€ операци€
 чтени€ или записи, вы должны организовать генерацию и
 обработку исключений в коде программы.*/
+        //incompatible types
+        //.NullPointerException
+        //
 
         System.out.println("ƒомашнее задание номер 4");
         LinkedList list= new LinkedList();
@@ -35,21 +38,11 @@ public class Main {
         list.add(7);
         list.add(8);
         list.add(9);
-        list.add(10);
-        list.add(11);
-        list.add(12);
-        list.add(13);
-        list.add(14);
-        list.add(15);
-        list.add(16);
-        list.add(17);
-        list.add(18);
-
-
+       /* list.add(10);*/
+        list.print();
+           list.remoove(3);
         list.print();
 
-        list.remoove(3);
-        System.out.println("искомый элемеент  "+list.get(1));
 
     }
 }
